@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/index-style.css">
+
+    <!-- animacion -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Puntos de Función</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <main role="main" class="container  presentacion">
+            <div class="jumbotron myjumbo-style">
+                <h1>Método de Puntos de Función</h1><br>
+                <p class="lead p-white">Métrica para cuantificar la funcionalidad de un sistema de software tal como la
+                    percibe el
+                    usuario/comprador.</p>
+                <p class="lead p-white">
+                    Permite medir el tamaño del sistema a partir de sus requisitos iniciales.
+                    Puede usarse muy tempranamente en el proceso de desarrollo ya que resulta relativamente fácil de
+                    visualizar.</p>
+
+                <p class="lead p-white">
+                    Fue originalmente definida por Allan Albrecht, de IBM, en 1979
+                </p><br>
+                <!-- <a class="btn btn-lg btn-primary" href="/docs/4.5/components/navbar/" role="button">Comenzar
+                    &raquo;</a> -->
+
+                    <a type="button" class="btn btn-lg btn-primary " href="pf.html">Comenzar
+                        &raquo;</a>
+                <a type="button" class="btn btn-lg btn-outline-primary" href="#section-more">Ver más +</a>
+            </div>
+        </main>
+    </div>
+
+
+    <div class="section-caracteristicas" data-aos="fade-in" id="section-more">
+
+        <div class="card-style">
+            <h4 class="">
+                Fórmula del Cálculo de Puntos de Función.
+            </h4><br>
+
+            <p class="lead ">
+                Se calculan de acuerdo con las siguientes fórmulas:
+            </p><br>
+
+            <p class="lead text-dark">
+                <strong>Puntos de función</strong> = Puntos de función sin ajuste * Factor de complejidad de
+                procesamiento.
+            </p>
+            <br>
+            <p class="text-primary lead">Donde el Factor de complejidad de procesamiento = 0.65 + (0.01 x Puntos de
+                complejidad de procesamiento).
+            </p><br>
+            <hr><br>
+
+
+            <div data-aos="fade-right">
+                <h5 class="">
+                    Puntos de Función Sin Ajuste.
+                </h5><br>
+                <p class="lead ">
+                    Es una medida de la funcionalidad del sistema que no pretende reflejar su complejidad interna.
+                </p><br>
+    
+                <div class="list-group txt-medium table-style">
+                    <button type="button" class="list-group-item list-group-item-action active">
+                        Se mide contando en el sistema:
+                    </button>
+    
+                    <button type="button" class="list-group-item list-group-item-action">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-bar-left" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z" />
+                        </svg>
+                        Entradas (inputs).
+                    </button>
+    
+                    <button type="button" class="list-group-item list-group-item-action">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-bar-right" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z" />
+                        </svg> Salidas (outputs).
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-check-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zm1.354 4.354a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                        </svg>
+                        Almacenamientos lógicos (logical
+                        files)</button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-server" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4C14.665 5.474 11.68 6.667 8 6.667 4.318 6.667 1.333 5.473 1.333 4V2.667zm0 3.667v3C1.333 10.805 4.318 12 8 12c3.68 0 6.665-1.193 6.667-2.665V6.334c-.43.32-.931.58-1.458.79C11.81 7.684 9.967 8 8 8c-1.967 0-3.81-.317-5.21-.876a6.508 6.508 0 0 1-1.457-.79zm13.334 5.334c-.43.319-.931.578-1.458.789-1.4.56-3.242.876-5.209.876-1.967 0-3.81-.316-5.21-.876a6.51 6.51 0 0 1-1.457-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667v-1.665z" />
+                        </svg>
+                        Consultas (inquiries).</button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bounding-box-circles"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M2 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM0 2a2 2 0 0 1 3.937-.5h8.126A2 2 0 1 1 14.5 3.937v8.126a2 2 0 1 1-2.437 2.437H3.937A2 2 0 1 1 1.5 12.063V3.937A2 2 0 0 1 0 2zm2.5 1.937v8.126c.703.18 1.256.734 1.437 1.437h8.126a2.004 2.004 0 0 1 1.437-1.437V3.937A2.004 2.004 0 0 1 12.063 2.5H3.937A2.004 2.004 0 0 1 2.5 3.937zM14 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM2 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm12 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                        </svg>
+                        Interfaces con otros sistemas.
+                    </button>
+    
+                </div><br>
+            </div>
+
+            <div data-aos="fade-left">
+                <p class="lead ">
+                    Ejemplo
+                </p>
+    
+                <table class="table table-bordered table-style txt-medium">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Entrada</th>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Salida</th>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Almacenamiento lógico</th>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Consultas</th>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Interfaces</th>
+                            <td>4</td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+                <br>
+                <p class="lead ">
+                    Complejidad y pesos
+                </p>
+    
+                <table class="table table-bordered table-style txt-medium">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Simple</th>
+                            <th scope="col">Promedio</th>
+                            <th scope="col">Complejo</th>
+    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Entrada</th>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Salida</th>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Almacenamiento lógico</th>
+                            <td>7</td>
+                            <td>10</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Interfaces</th>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Consultas</th>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>6</td>
+                        </tr>
+    
+    
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- conteo de complejiodad resultado -->
+            <button type="button" class="btn btn-primary txt-medium" data-toggle="modal" data-target="#exampleModal">
+                Ver conteo de complejidad
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Conteo de complejidad - Ejemplo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/conteo-complejidad.png" style="width: 100%;"
+                                alt="tabla de conteo de complejidad">
+                            <hr>
+                            <p class="lead text-dark txt-medium">
+                                <strong style="font-weight: bold;">UFC</strong> = Σ(número de elementos de un tipo) x
+                                peso.
+                            </p>
+                            <p class="lead text-dark txt-medium" style="font-weight: bold;">
+                                UFC = 90
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin conteo de complejiodad resultado -->
+
+            <br>
+            <hr><br>
+
+            <div data-aos="fade-up-right">
+                <h5 class="">
+                    Factor de Complejidad de Procesamiento.
+                </h5><br>
+                <ul class="list-group txt-medium">
+                    <li class="list-group-item" style="border-color: white;">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                        Son una medida del grado de influencia en la
+                        complejidad del sistema, de una serie de factores preestablecidos. </li>
+                    <li class="list-group-item" style="border-color: white;">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                        Se consideran 14 factores diferentes. </li>
+                    <li class="list-group-item" style="border-color: white;">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                        Cada factor se evalúa en una escala de 0 (no
+                        tiene influencia) a 5 (influencia muy fuerte).
+                        <ul style="margin: 5px;">
+                            <li>0 = No está presente, no tiene ninguna influencia si lo está.</li>
+                            <li>1 = Influencia poco significativa.</li>
+                            <li>2 = Influencia moderada.</li>
+                            <li>3 = Influencia significativa.</li>
+                            <li>4 = Influencia significativa.</li>
+                            <li>5 = Influencia muy fuerte, en toda la extensión del sistema.</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item" style="border-color: white;">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                        Permite ajustar el total de puntos de función en 35% (hacia arriba o hacia abajo) de acuerdo con la
+                        complejidad de procesamiento. </li>
+                </ul>
+    
+    
+                <li class="list-group-item" style="border-color: white;">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    Se calcula con la fórmula:
+                    <ul style="margin: 5px;">
+                        <li><strong>Factor de complejidad de procesamiento</strong> = 0.65 + (0.01 x Puntos de complejidad
+                            de procesamiento) </li>
+                        <li>Su rango de valores está entre 0.65 (0 puntos de complejidad) hasta 1.35 (70 puntos de
+                            complejidad). </li>
+                    </ul>
+                </li><br>
+            </div>
+
+
+
+            <div data-aos="fade-up-left">
+                <p class="lead ">
+                    Los factores son
+                </p>
+    
+                <ul class="list-group table-style txt-medium">
+                    <li class="list-group-item">1. Comunicación de datos.</li>
+                    <li class="list-group-item">2. Actualización en línea.</li>
+                    <li class="list-group-item">3. Servicios distribuidos.</li>
+                    <li class="list-group-item">4. Procesamiento complejo.</li>
+                    <li class="list-group-item">5. Desempeño. </li>
+                    <li class="list-group-item">6. Reusabilidad.</li>
+                    <li class="list-group-item">7. Ambiente de uso sobrecargado.</li>
+                    <li class="list-group-item">8. Facilidad de instalación.</li>
+                    <li class="list-group-item">9. Rata de transacciones.</li>
+                    <li class="list-group-item">10. Facilidad de operación.</li>
+                    <li class="list-group-item">11. Entrada de datos en línea.</li>
+                    <li class="list-group-item">12. Múltiples lugares de operación.</li>
+                    <li class="list-group-item">13. Eficiencia del usuario final.</li>
+                    <li class="list-group-item">14. Facilidad de modificación.</li>
+                </ul><br>
+            </div>
+
+            <div data-aos="fade-down-right">
+                <p class="lead ">
+                    Ejemplo
+                </p>
+    
+                <p style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">0 (no importante / aplicable) a 5
+                    (absolutamente esencial).</p>
+    
+                <ul class="list-group txt-medium">
+                    <li class="list-group-item">1. ¿El sistema requiere respaldo y recuperación confiables?
+                        <strong>5</strong></li>
+                    <li class="list-group-item">2. ¿Se requieren comunicaciones de datos especializadas para transferir
+                        información hacia o desde
+                        la aplicación? <strong>0</strong></li>
+                    <li class="list-group-item">3. ¿Existen funciones de procesamiento distribuidas? <strong>0</strong></li>
+                    <li class="list-group-item">4. ¿El desempeño es crucial? <strong>5</strong></li>
+                    <li class="list-group-item">5. ¿El sistema correrá en un entorno operativo existente enormemente
+                        utilizado? <strong>5</strong></li>
+                    <li class="list-group-item">6. ¿El sistema requiere entrada de datos en línea? <strong>5</strong></li>
+                    <li class="list-group-item">7. ¿La entrada de datos en línea requiere que la transacción de entrada se
+                        construya sobre
+                        múltiples pantallas u operaciones? <strong>0</strong></li>
+                    <li class="list-group-item">8. ¿Los ALI se actualizan en línea? <strong>5</strong></li>
+                    <li class="list-group-item">9. ¿Las entradas, salidas, archivos o consultas son complejos?
+                        <strong>1</strong></li>
+                    <li class="list-group-item">10. ¿El procesamiento interno es complejo? <strong>1</strong></li>
+                    <li class="list-group-item">11. ¿El código se diseña para ser reutilizable? <strong>5</strong></li>
+                    <li class="list-group-item">12. ¿La conversión y la instalación se incluyen en el diseño?
+                        <strong>0</strong></li>
+                    <li class="list-group-item">13. ¿El sistema se diseña para instalaciones múltiples en diferentes
+                        organizaciones? <strong>0</strong></li>
+                    <li class="list-group-item">14. ¿La aplicación se diseña para facilitar el cambio y su uso por parte del
+                        usuario? <strong>4</strong></li>
+                </ul><br>
+            </div>
+
+            <!-- conteo de Factor de Ajuste de Valor -->
+            <button type="button" class="btn btn-primary txt-medium" data-toggle="modal" data-target="#exampleModal2">
+                Ver conteo de Factor de Ajuste de Valor
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel2">Conteo de complejidad - Ejemplo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/tabla-ajuste.png" style="width: 100%;" alt="tabla de conteo de complejidad">
+                            <hr>
+                            <p class="lead text-dark txt-medium">
+                                <strong style="font-weight: bold;">Factor de Ajuste de Valor FAV: 36</strong>
+                            </p>
+
+                            <p class="lead text-dark txt-medium">
+                                Σ(Fi) = 36
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin conteo de complejiodad resultado -->
+
+            <br>
+            <hr><br>
+
+           <div data-aos="fade-down-left">
+            <h5 class="">
+                Cálculo de puntos de función ajustados (PFA).
+            </h5><br>
+
+            <p class="lead text-dark txt-medium" style="font-weight: bold;">
+                UFC = 90, FAV = 36
+            </p>
+
+            <p class="lead text-dark txt-medium" style="font-weight: bold;">
+                PFA = 90 x [0.65 + 0.01 x 36]
+            </p>
+
+            <p class="lead text-dark txt-medium" style="font-weight: bold;">
+                PFA = 90 x [0.65 + 0.36]
+            </p>
+
+            <p class="lead text-dark txt-medium" style="font-weight: bold;">
+                PFA = 90 x [1.01]
+            </p>
+
+            <p class="lead text-dark txt-medium" style="font-weight: bold;">
+                PFA = 90.9
+            </p><br>
+
+            <h5>Interpretación de complejidad</h5>
+
+            <ul>
+                <li>
+                    Sencilla hasta 100 puntos
+                </li>
+                <li>
+                    Media 101 a 300 puntos
+                </li>
+            </ul>
+
+            <br>
+            <h6>Cálculo del esfuerzo horas/persona</h6>
+
+            <p style=" font-family: Arial, Helvetica, sans-serif;">Suponiendo una jornada de 8 horas de trabajo:</p>
+
+            <p style=" font-family: Arial, Helvetica, sans-serif;">PFA / ( 1 / 8 ) = 90.9/.125 = 727.2 horas/persona</p>
+
+            <p style=" font-family: Arial, Helvetica, sans-serif;">Duración del proyecto en horas (asignándolo a un
+                equipo de 7):</p>
+
+            <p style=" font-family: Arial, Helvetica, sans-serif;">(727.2horas/persona) / 7 personas = 103.88 horas por
+                miembro del equipo</p>
+
+            <p style=" font-family: Arial, Helvetica, sans-serif;"><strong>Duración del proyecto en horas:</strong> <br>
+                103.88 horas por miembro del equipo <br>
+                <strong>Duración en meses:</strong> <br>
+                103.88 horas / (100 horas/mes) = 1 mes. <br>
+                <strong>Duración del proyecto en meses:</strong> <br>
+                1 mes con un equipo de desarrollo de 7 personas</p>
+
+            <br><br>
+
+            <strong class="text-primary">Nota: Se calculan 100 horas productivas de las 8 horas de la jornada laboral en
+                20 días hábiles</strong>
+            <br><br>
+            <a type="button" class="btn btn-lg btn-primary " href="#">Comenzar
+                &raquo;</a>
+           </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+        <!-- animacion -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/index-style.css">
+
+    <title>Cálculo de puntos de función</title>
+</head>
+
+<body>
+
+    <div class="section-caracteristicas  mt-4" data-aos="fade-in" id="section-more">
+
+        <div class="card-style">
+
+            <h5 class="">
+                Puntos de Función Sin Ajuste.
+            </h5><br>
+
+
+
+            <div data-aos="fade-down">
+                <!-- <form> -->
+
+                    <table class="table table-bordered table-style txt-medium">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Simple</th>
+                                <th scope="col">Promedio</th>
+                                <th scope="col">Complejo</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Entradas</th>
+                                <td>
+                                    <input type="number" class="form-control" id="inputEntradaSimple" style="width: 80px;"
+                                        placeholder="0" min="0" value="0">
+                                </td>
+                                <td><input type="number" class="form-control" id="inputEntradaPromedio" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                                <td><input type="number" class="form-control" id="inputEntradaComplejo" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Salidas</th>
+                                <td><input type="number" class="form-control" id="inputSalidaSimple" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                                <td><input type="number" class="form-control" id="inputSalidaMedio" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                                <td><input type="number" class="form-control" id="inputSalidaComplejo" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Almacenamiento lógico</th>
+                                <td><input type="number" class="form-control" id="inputAlmacenamientoSimple" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                                <td><input type="number" class="form-control" id="inputAlmacenamientoMedio" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                                <td><input type="number" class="form-control" id="inputAlmacenamientoComplejo" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Interfaces</th>
+                                <td><input type="number" class="form-control" id="inputInterfaceSimple" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                                <td><input type="number" class="form-control" id="inputInterfaceMedio" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                                <td><input type="number" class="form-control" id="inputInterfaceComplejo" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Consultas</th>
+                                <td><input type="number" class="form-control" id="inputConsultasSimple" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                                <td><input type="number" class="form-control" id="inputConsultasMedio" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                                <td><input type="number" class="form-control" id="inputConsultasComplejo" style="width: 80px;"
+                                        placeholder="0" value="0"></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+            </div>
+            <a type="button" class="btn btn-primary txt-medium" style="width: 200px;" href="#factor-complejidad">
+                Siguiente
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+            </a>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <div class="card-style" id="factor-complejidad">
+
+            <h5 class="">
+                Factor de Complejidad de Procesamiento.
+            </h5><br>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Factor</th>
+                        <th scope="col">Valor</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Respaldo y recuperación</td>
+                        <td>
+                            <input type="number" class="form-control" id="inputFactor1" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Comunicaciones de datos </td>
+                        <td><input type="number" class="form-control" id="inputFactor2" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Procesamiento distribuido</td>
+                        <td><input type="number" class="form-control" id="inputFactor3" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Rendimiento crítico</td>
+                        <td><input type="number" class="form-control" id="inputFactor4" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Existencia de entorno operativo </td>
+                        <td><input type="number" class="form-control" id="inputFactor5" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Entrada de datos en línea </td>
+                        <td><input type="number" class="form-control" id="inputFactor6" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Transacción de entrada sobre múltiples pantallas</td>
+                        <td><input type="number" class="form-control" id="inputFactor7" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Archivos maestros actualizados en línea </td>
+                        <td><input type="number" class="form-control" id="inputFactor8" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Complejo de valores de dominio de información </td>
+                        <td><input type="number" class="form-control" id="inputFactor9" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Complejo de procesamiento interno </td>
+                        <td><input type="number" class="form-control" id="inputFactor10" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>Código diseñado para reuso </td>
+                        <td><input type="number" class="form-control" id="inputFactor11" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>Conversión/instalación en diseño </td>
+                        <td><input type="number" class="form-control" id="inputFactor12" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13</th>
+                        <td>Instalaciones múltiples </td>
+                        <td><input type="number" class="form-control" id="inputFactor13" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14</th>
+                        <td>Aplicación diseñada para cambio </td>
+                        <td><input type="number" class="form-control" id="inputFactor14" style="width: 200px;"
+                                placeholder="Ingrese un valor" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <a type="button" class="btn btn-primary txt-medium" style="width: 200px;" href="#esfuerzo">
+                Siguiente
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+            </a>
+
+        </div>
+
+        <hr><br>
+
+        <div class="card-style" id="esfuerzo">
+            <h5 class="">
+                Cálculo del esfuerzo
+            </h5><br>
+
+            <div class="form-group">
+                <label for="inputEntradas">Jornada de horas de trabajo</label>
+                <input type="number" class="form-control" id="inputHoras" aria-describedby="entradasHelp"
+                    placeholder="Ingrese la cantidad horas" required>
+                <small id="entradasHelp" class="form-text text-muted">Son las horas laborales de trabajo
+                    díarias</small>
+            </div>
+
+            <div class="form-group">
+                <label for="inputEntradas">Cantidad de personas</label>
+                <input type="number" class="form-control" id="inputPersonas" aria-describedby="entradasHelp"
+                    placeholder="Ingrese la cantidad de personas" required>
+                <small id="entradasHelp" class="form-text text-muted">Cantidad de miembros del equipo de
+                    trabajo</small>
+            </div>
+
+
+
+            <br><br>
+            <button class="btn btn-primary txt-medium" style="width: 200px;" id="btn-calcular" data-toggle="modal"
+                data-target="#exampleModal">
+                Calcular
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+            </button>
+            <!-- </form> -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Resultado</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="modal-result-body">
+                            <!-- <h6>Puntos de funcion ajustados (PFA) </h6>
+                            <h2 class="text-primary">96</h2>
+                            <hr>
+                            <h5>Cálculo del esfuerzo</h5><br>
+                            <h6>Con una jornada de 8 horas</h6>
+                            <h2 class="text-primary">727.2 horas</h2><br>
+                            <h6>Duración del proyecto en horas (con un equipo de 7)</h6>
+                            <h2 class="text-primary">103.88 horas/persona</h2><br>
+                            <h6>Duración en meses</h6>
+                            <h2 class="text-primary">1 mes </h2>
+                            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
+                                con un equipo de desarrollo de <Strong>7 personas</Strong>.</p> -->
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><br>
+        <a href="index.html">volver a inicio</a>
+    </div>
+
+    
+
+
+    </div>
+
+    <!-- script para calcular -->
+    <script src="js/variables.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

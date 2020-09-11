@@ -1,0 +1,53 @@
+body {
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    background-image: url("bg-index-pf.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.opacity-1 {
+    opacity: 0.9;
+}
+
+.myjumbo-style {
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.p-white {
+    color: white;
+}
+
+.section-caracteristicas {
+    margin: 100px;
+}
+
+.card-style {
+    box-shadow: 5px 5px 15px rgba(129, 129, 129, 0.473);
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.txt-medium {
+    font-size: 16px;
+}
+
+.table-style {
+    width: 50%;
+    /* margin: auto; */
+}
